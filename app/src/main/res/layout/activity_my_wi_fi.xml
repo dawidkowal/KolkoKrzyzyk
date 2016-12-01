@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_wi_fi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dkkow.kolkokrzyzyk.MyWiFiActivity">
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.example.dkkow.kolkokrzyzyk.DeviceListFragment"
+        android:layout_alignParentStart="true"
+        android:id="@+id/listUser"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>
