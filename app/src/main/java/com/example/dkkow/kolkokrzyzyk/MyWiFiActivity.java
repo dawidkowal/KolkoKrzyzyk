@@ -11,7 +11,6 @@ import android.net.wifi.p2p.WifiP2pManager;
 import android.net.wifi.p2p.WifiP2pManager.*;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MyWiFiActivity extends AppCompatActivity implements ChannelListener {
@@ -74,7 +73,7 @@ public class MyWiFiActivity extends AppCompatActivity implements ChannelListener
                         }
                     });
 
-            mManager.discoverPeers(mChannel, new WifiP2pManager.ActionListener() {
+            mManager.discoverPeers(mChannel, new ActionListener() {
                 @Override
                 public void onSuccess() {
                     Toast.makeText(MyWiFiActivity.this, "Znaleziono",
